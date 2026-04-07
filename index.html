@@ -256,7 +256,7 @@
 
 </div>
 <script>
-(function(){if(sessionStorage.getItem('_t'))return;sessionStorage.setItem('_t','1');
+(function(){var k='_t'+location.pathname;if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1');
 fetch('https://renstudio-tracker.ren-studio-dev.workers.dev',{method:'POST',headers:{'Content-Type':'application/json'},
 body:JSON.stringify({project:'蔥抓餅企劃書',page:'企劃書展示'})}).catch(function(){});})();
 </script>
